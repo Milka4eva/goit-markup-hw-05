@@ -96,9 +96,10 @@ header {
 
     color: var(--main-blackish);
 
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
+    flex-direction: column;
 }
 
 .maincontacts {
@@ -136,6 +137,18 @@ header {
 
 .current {
     color: var(--main-blue);
+    padding-bottom: 0;
+}
+
+.current::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: var(--main-blue);
+    border: 1px solid;
+    border-radius: 2px;
+    margin-top: 28px;
 }
 
 /*Main Styles*/
