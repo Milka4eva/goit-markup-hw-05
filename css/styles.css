@@ -482,7 +482,8 @@ h2 .ourteamname {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socialicon1:hover, .socialicon1:focus {
+.teamiconlink:hover .socialicon1, 
+.teamiconlink:focus .socialicon1: {
     fill:#ffffff;
 }
 
@@ -494,6 +495,7 @@ h2 .ourteamname {
 
 .clientlist ul {
     display:flex;
+    gap: 30px;
 }
 
 .clientlist li + li {
@@ -510,8 +512,6 @@ h2 .ourteamname {
 
 .linkclients {
     display:flex;
-    width: 100%;
-    height: 100%;
     width: 170px;
     height: 92px;
     justify-content: center;
@@ -526,9 +526,13 @@ h2 .ourteamname {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.iconclients:hover, .iconclients:focus {
+.linkclients .iconclients {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.linkclients:hover .iconclients,
+.linkclients:focus .iconclients {
     fill:var(--main-blue);
-    border: 1px solid var(--main-blue);
 }
 
 /*Footer Styles*/
