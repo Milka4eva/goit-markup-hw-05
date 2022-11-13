@@ -191,7 +191,7 @@ header {
     width: 696px;
 }
 
-.mainpagebox button {
+.mainpagebox .buttonopen {
     font-size: 16px;
     font-weight: 700;
     line-height: 1.88em;
@@ -206,11 +206,11 @@ header {
     padding: 10px 32px;
 }
 
-.overlay > button {
+.overlay > .buttonopen {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay > button:hover, .overlay > button:focus {
+.overlay > .buttonopem:hover, .overlay > .buttonopen:focus {
     background-color: #188CE8;
     border-radius: none;
 }
@@ -238,16 +238,21 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
-.modal > button {
-    border: 1px solid #afb1b8;
+.modalbutton {
+    background-color: var(--main-white);
     border-radius: 50%;
-    display: flex;
     width: 30px;
     height: 30px;
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 8px;
+    margin-right: 8px;
 }
 
 h1 {
@@ -518,7 +523,7 @@ h2 .ourteamname {
 .iconclients {
     fill:#757575; 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250mx cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .iconclients:hover, .iconclients:focus {
