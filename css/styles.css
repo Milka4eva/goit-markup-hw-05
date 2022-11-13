@@ -450,24 +450,19 @@ h2 .ourteamname {
 }
 
 .listclients > li {
-    width: 170px;
-    height: 92px;
     display: block;
-    border: 1px solid #afb1b8;
 }
 
 .linkclients {
     display:flex;
     width: 100%;
     height: 100%;
+    width: 170px;
+    height: 92px;
     justify-content: center;
     align-items: center;
     border: 1px solid #afb1b8;
-}
-
-.linkclients:hover, .linkclients:focus {
-    color: var(--main-blue);
-    border: 1px solid var(--main-blue);
+    border-radius: 4px;
 }
 
 .iconclients {
@@ -476,6 +471,7 @@ h2 .ourteamname {
 
 .iconclients:hover, .iconclients:focus {
     fill:var(--main-blue);
+    border: 1px solid var(--main-blue);
 }
 
 /*Footer Styles*/
