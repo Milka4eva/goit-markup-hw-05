@@ -519,8 +519,7 @@ h2 .ourteamname {
 
 .iconclients {
     fill:#afb1b8; 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .linkclients .iconclients {
@@ -528,7 +527,7 @@ h2 .ourteamname {
 }
 
 .linkclients:hover, .linkclients:focus {
-    border: var(--main-blue)
+    border: 1px solid var(--main-blue);
 }
 
 .linkclients:hover .iconclients,
