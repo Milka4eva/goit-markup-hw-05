@@ -470,6 +470,7 @@ h2 .ourteamname {
 }
 
 .teamiconlink:hover, .teamiconlink:focus {
+    fill: var(--main-white);
     background-color: var(--main-blue);
 }
 
